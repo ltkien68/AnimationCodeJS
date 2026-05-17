@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tilt Card Demo - Tách 3 file</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Card 1: Thẻ đội bóng Việt Nam (mô phỏng theo yêu cầu) -->
+    <a
+      href="/bong_da/viet-nam?nhom=ao-dau-bong-da"
+      class="football-team-card tilt-card"
+    >
+      <div class="football-team-logo-box">
+        <!-- Ảnh logo đội tuyển, dùng ảnh placeholder cho demo -->
+        <img
+          src="../assets/image/logo.png"
+          alt="Vietnam"
+          class="football-team-logo"
+        />
+      </div>
+      <span class="football-team-name">Việt Nam</span>
+    </a>
+
+    <!-- Card 2: Thẻ bộ sưu tập (mô phỏng cấu trúc giống bạn đã dùng) -->
+    <article class="collection-showcase-card tilt-card">
+      <a class="collection-showcase-image-link" href="/bo-suu-tap/slug">
+        <div class="collection-showcase-image-wrap">
+          <img
+            src="../assets/image/logo.png"
+            alt="Bộ sưu tập"
+            class="collection-showcase-image"
+          />
+        </div>
+      </a>
+      <div class="collection-showcase-content">
+        <h3 class="collection-showcase-title">
+          <a href="/bo-suu-tap/slug">Bộ sưu tập mẫu</a>
+        </h3>
+      </div>
+    </article>
+
+    <!-- Liên kết file JavaScript (đặt cuối body để đảm bảo DOM đã sẵn sàng) -->
+    <script src="./animate.js"></script>
+  </body>
+</html>
